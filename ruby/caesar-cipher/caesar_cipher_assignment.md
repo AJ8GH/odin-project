@@ -1,4 +1,4 @@
-Assignment
+# Caesar Cipher
 
 In cryptography, a Caesar cipher, also known as Caesar’s cipher,
 the shift cipher, Caesar’s code or Caesar shift,
@@ -11,6 +11,8 @@ For example, with a left shift of 3, D would be replaced by A, E would become B,
 The method is named after Julius Caesar, who used it in his private correspondence.
 
 There’s a video about it from Harvard’s CS50 class.
+
+## Assignment
 
 Implement a caesar cipher that takes in a string
 and the shift factor and then outputs the modified string:
