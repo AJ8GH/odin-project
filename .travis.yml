@@ -1,5 +1,5 @@
 language: ruby
-rvm: 2.7.0
+rvm: 3.0.0
 bundler: 2.2.3
 script: bundle exec rake spec
 # os: osx
