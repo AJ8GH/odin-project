@@ -1,3 +1,4 @@
 language: ruby
 rvm: 2.7.0
-os: osx
+script: bundle exec rake spec
+# os: osx
