@@ -24,14 +24,9 @@ def caesar_cipher(string, num)
   new_string.map(&:chr).join
 end
 
-
-
-p caesar_cipher('Z', 1)
-p caesar_cipher('a', 1)
-p caesar_cipher('z', 1)
-p caesar_cipher('A', 1)
-
-puts
-
-p ascii('Hey You')
-p caesar_cipher('hey. Nice to meet you, Zoo head (not a compliment!!! Wow youre dumb boy....)', 15)
+rg = ["jas83jKs334I&^^&%$^$£$£@5JHASUD",
+                         "(*&(*&^asdsf*&54sddGAS*(AdsX5*&",
+                         "^$£*(HQOI5*&(*&KJHY&&*hasjhbasi",
+                         "uwed783JQ(*S!@*@NIS2iwd90d5412k",
+                         "l';s';.)))kdfjf832h(*(*kasjcin)"].join
+p caesar_cipher(rg, 7)
