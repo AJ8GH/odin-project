@@ -23,10 +23,3 @@ def caesar_cipher(string, num)
   end
   new_string.map(&:chr).join
 end
-
-rg = ["jas83jKs334I&^^&%$^$£$£@5JHASUD",
-                         "(*&(*&^asdsf*&54sddGAS*(AdsX5*&",
-                         "^$£*(HQOI5*&(*&KJHY&&*hasjhbasi",
-                         "uwed783JQ(*S!@*@NIS2iwd90d5412k",
-                         "l';s';.)))kdfjf832h(*(*kasjcin)"].join
-p caesar_cipher(rg, 7)
