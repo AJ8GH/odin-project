@@ -1,3 +1,3 @@
 def stock_picker(array)
-  array
+  [array.index(array.min)]
 end

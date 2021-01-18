@@ -6,6 +6,10 @@ describe '#stock_prices' do
   end
 
   it "can pick the best day to buy" do
-    expect(stock_picker([1,2,3,4]).first).to eq 1
+    expect(stock_picker([1,2,3,4]).first).to eq 0
+  end
+
+  it "can pick the best day to buy and sell" do
+    expect(stock_picker([1,2,3,4])).to eq [1,4]
   end
 end
