@@ -1,7 +1,7 @@
 def bubble_sort(array)
   count = 0
   array.each_with_index do |element, index|
-    unless array[index + 1].nil?
+    if array[index + 1]
       if element > array[index + 1]
         new_element = array[index + 1]
         array[index] = new_element
