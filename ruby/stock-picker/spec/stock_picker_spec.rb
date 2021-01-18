@@ -12,4 +12,8 @@ describe '#stock_prices' do
   it "can pick the best day to buy and sell" do
     expect(stock_picker([1,2,3,4])).to eq [0,3]
   end
+
+  it "can pick correctly if the max value is before the min value" do
+    expect(stock_picker([4,1,2,3])).to eq [1,3]
+  end
 end
