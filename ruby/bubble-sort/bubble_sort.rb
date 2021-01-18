@@ -1,12 +1,12 @@
-class Array
-  def bubble_sort
-    self.each_with_index do |element, index|
-      return self if self[index + 1].nil?  
-      if element > self[index + 1]
-        self[index] = self[index + 1]
-        self[index + 1] = element
+def bubble_sort(array)
+  new_ary = array
+  new_ary.each_with_index do |element, i|
+    unless new_ary[i + 1].nil?
+      if element > new_ary[i + 1]
+        array[i] = new_ary[i + 1]
+        array[i + 1] = element
       end
     end
-    self
   end
+  array == array.sort ? array : bubble_sort(array)
 end
