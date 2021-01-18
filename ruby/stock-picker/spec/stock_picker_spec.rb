@@ -16,4 +16,8 @@ describe '#stock_prices' do
   it "can pick correctly if the max value is before the min value" do
     expect(stock_picker([4,1,2,3])).to eq [1,3]
   end
+
+  it "can handle the example case" do
+    expect(stock_picker([17,3,6,9,15,8,6,1,10])).to eq [1,4]
+  end
 end
