@@ -1,12 +1,14 @@
 def bubble_sort(array)
-  new_ary = array
-  new_ary.each_with_index do |element, i|
-    unless new_ary[i + 1].nil?
-      if element > new_ary[i + 1]
-        array[i] = new_ary[i + 1]
-        array[i + 1] = element
+  count = 0
+  array.each_with_index do |element, index|
+    unless array[index + 1].nil?
+      if element > array[index + 1]
+        new_element = array[index + 1]
+        array[index] = new_element
+        array[index + 1] = element
+        count += 1
       end
     end
   end
-  array == array.sort ? array : bubble_sort(array)
+  count.zero? ? array : bubble_sort(array)
 end
